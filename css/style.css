@@ -1,0 +1,80 @@
+body {
+	background: url('images/blue_bck.jpg') no-repeat fixed center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh
+}
+
+h1 {
+	color: white;
+}
+
+.wrapper {
+	margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    margin-top: -230px;
+}
+
+.container {
+	background: url('images/blue_bck_content.png') no-repeat fixed center center;
+	margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 400px;
+    color: black !important;
+}
+
+ul.nav {
+	display: flex;
+	flex-direction: row !important;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	height: 45px;
+}
+
+ul.nav a {
+	text-decoration: none;
+	color: black;
+}
+
+ul.nav li {
+	list-style-type: none;
+}
+
+a.vcard {
+	width: 200px;
+    height: 27px;
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 8px;
+    color: #FFF;
+    background: url('images/blue_bck_vcard.jpg') no-repeat;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+h2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+a {
+	text-decoration: none;
+}
+
+div.copy {
+	width: 600px;
+    height: 30px;
+    font: 9px "Small Fonts",Verdana;
+    text-shadow: #fff 0px 1px 0px;
+    text-align: center;
+    padding-top: 32px;
+}
