@@ -62,7 +62,6 @@ a.vcard {
 }
 
 h2 {
-	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
@@ -76,5 +75,10 @@ div.copy {
     font: 9px "Small Fonts",Verdana;
     text-shadow: #fff 0px 1px 0px;
     text-align: center;
-    padding-top: 32px;
+    padding-top: 30px;
+}
+
+.content {
+	height: 175px;
+	margin-top: 30px;
 }
