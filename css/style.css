@@ -3,7 +3,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh
+	/*height: 885px*/
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
     margin-right: auto;
     width: 100%;
     height: 400px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     text-align: center;
     margin-top: -230px;
@@ -76,6 +76,8 @@ div.copy {
     text-shadow: #fff 0px 1px 0px;
     text-align: center;
     padding-top: 30px;
+    position: absolute;
+    top: 330px;
 }
 
 .content {
