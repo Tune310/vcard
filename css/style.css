@@ -45,6 +45,14 @@ ul.nav a {
 	color: black;
 }
 
+a:active {
+	color: blue !important;
+}
+
+a.active {
+	color: blue !important;
+}
+
 ul.nav li {
 	list-style-type: none;
 }
@@ -85,3 +93,4 @@ div.copy {
 	margin-top: 30px;
 	overflow: hidden;
 }
+
