@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     // alert('yo');
     function sliderDown(e) {
-      $("#homeContainer").delay(1000).slideDown('slow');
+      $("#homeContainer").delay(650).slideDown(300);
       console.log($(s));
 
       // alert('working')
@@ -45,7 +45,7 @@ $(document).ready(function(){
 
     // alert('yo');
     function sliderDown(e) {
-      $("#aboutContainer").delay(800).slideDown("slow");
+      $("#aboutContainer").delay(650).slideDown(300);
       console.log($(s));
 
       // alert('working')
@@ -91,7 +91,7 @@ $(document).ready(function(){
 
 //     // alert('yo');
 //     function sliderDown(e) {
-//       $("#aboutContainer").delay(800).slideDown('slow');
+//       $("#aboutContainer").delay(650).slideDown(300);
 //       console.log($(s));
 
 //       // alert('working')
