@@ -34,6 +34,8 @@ $(document).ready(function(){
     s += '<div id="aboutContainer" style="display: none;">';
     s += '  <div id="avatarContainer">';
     s += '    <img src="css/images/pic_100x100.jpg">';
+    s += '  </div>';
+    s += '  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>'
     s += '</div>';
 
 

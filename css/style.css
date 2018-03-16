@@ -88,9 +88,14 @@ div.copy {
     top: 330px;
 }
 
-.content {
-	height: 175px;
-	margin-top: 30px;
-	overflow: hidden;
+#avatarContainer {
+	width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 0px 10px 10px 0px;
+    background: url('images/bck_pic.jpg') no-repeat;
+    /*background-size: 100% 100%;*/
+    float: left;
 }
+
 
