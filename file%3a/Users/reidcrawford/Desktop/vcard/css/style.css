@@ -148,7 +148,12 @@ div.WorkLeft {
     height: 100%;
     display: flex;
     width: 100%;
+    /* padding-top:  10px; */
     padding: 0px;
     margin: 0 auto !important;
     justify-content: space-around;
+}
+
+#aboutContainer {
+	text-align: left;
 }
