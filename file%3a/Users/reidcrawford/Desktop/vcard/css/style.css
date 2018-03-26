@@ -256,8 +256,6 @@ div.copy {
     color: #333;
     background: url('images/bck_btn.jpg') repeat-x;
     cursor: pointer;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
 .buttonContainer {
@@ -266,9 +264,4 @@ div.copy {
 
 input {
     outline: none;
-}
-
-#buttonsContainer  {
-    display: flex;
-    justify-content: flex-end;
 }

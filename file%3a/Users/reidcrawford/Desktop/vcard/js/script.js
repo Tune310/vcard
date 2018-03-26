@@ -1,24 +1,12 @@
 $(document).ready(function(){
-
-  $(".fancybox").fancybox();
   // $('#about').on('click', function(clickEvent) {
   // 	$('.content').html('');
   // })
 
-  // $(".fancybox").fancybox({
-  //   openEffect  : 'none',
-  //   closeEffect : 'none'
-  // });
-
-  // $("#hidden_link").fancybox({
-  //       afterShow: function () {
-  //           $("#fancybox-img").wrap($("<a />", {
-  //               // set anchor attributes
-  //               href: this.href, //or your target link
-  //               target: "_blank" // optional
-  //           }));
-  //       }
-  //   }).trigger("click");
+  $(".fancybox").fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none'
+  });
 
   
 
@@ -86,8 +74,8 @@ $('#work').on('click', function(clickEvent) {
     s += '<div id="workContainer" style="display: none;">';
     s += '  <div class="row">';
     s += '    <ul>';
-    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg"><img src="css/images/work-1.jpg" alt="" /></a></li>';
-    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
+    s += '      <li class="work-one"><a class="fancybox" rel="gallery1" href="css/images/work-1_big.jpg" alt=""><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="gallery1" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
     s += '      <li class="work-three"><img src="css/images/work-3.jpg"></li>';
     s += '      <li class="work-one"><img src="css/images/work-1.jpg"></li>';
     s += '      <li class="work-two"><img src="css/images/work-2.jpg"></li>';
@@ -177,7 +165,7 @@ $('#contact').on('click', function(clickEvent) {
     s += '      <li><span>Name:</span> <input type="text" name="name" id="name"></li>';
     s += '      <li><span>E-Mail:</span> <input type="text" name="email" id="email"></li>';
     s += '      <li><span>Message:</span> <textarea name="message" id="message" cols="40" rows="10"></textarea></li>';
-    s += '      <li id="buttonsContainer"><input type="submit" value="Submit" name="submit" class="button"> <input type="reset" value="Reset" class="button"></li>';
+    s += '      <li><input type="submit" value="Submit" name="submit" class="button"></li>';
     s += '    </ul>';
     s += '</div>';
 
