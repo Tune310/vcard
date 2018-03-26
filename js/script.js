@@ -71,7 +71,7 @@ $(document).ready(function(){
 $('#work').on('click', function(clickEvent) {
     // $("ul.nav a").slide('slow').hasClass('active');
     var s = ''
-    s += '<div id="workContaier" style="display: none;">';
+    s += '<div id="workContainer" style="display: none;">';
     s += '  <div class="row">';
     s += '    <ul>';
     s += '      <li class="work-one"><a class="fancybox" rel="gallery1" href="css/images/work-1_big.jpg" alt=""><img src="css/images/work-1.jpg" alt="" /></a></li>';
@@ -99,7 +99,7 @@ $('#work').on('click', function(clickEvent) {
 
     // alert('yo');
     function sliderDown(e) {
-      $("#workContaier").delay(650).slideDown(300);
+      $("#workContainer").delay(650).slideDown(300);
       console.log($(s));
 
       // alert('working')
@@ -113,23 +113,19 @@ $('#work').on('click', function(clickEvent) {
 $('#social').on('click', function(clickEvent) {
     // $("ul.nav a").slide('slow').hasClass('active');
     var s = ''
-    s += '<div id="social" style="display: none;">';
-    s += '  <div class="row">';
+    s += '<div id="socialContainer" style="display: none;">';
     s += '    <ul>';
-    s += '      <li class="work-one"><a class="fancybox" rel="gallery1" href="css/images/work-1_big.jpg" alt=""><img src="css/images/work-1.jpg" alt="" /></a></li>';
-    s += '      <li class="work-two"><img src="css/images/work-2.jpg"></li>';
-    s += '      <li class="work-three"><img src="css/images/work-3.jpg"></li>';
-    s += '      <li class="work-one"><img src="css/images/work-1.jpg"></li>';
-    s += '      <li class="work-two"><img src="css/images/work-2.jpg"></li>';
+    s += '      <li><img src="css/images/twitter_32.png" /><a href><strong>Twitter</strong><br>www.linkedin.com/in/johndoevcard </a></li>';
+    s += '      <li><img src="css/images/flickr_32.png" /><a href><strong>Flickr</strong><br>www.flickr.com/johndoevcardpage </a></li>';
+    s += '      <li><img src="css/images/lastfm_32.png" /><a href><strong>Last.fm</strong><br>www.last.fm/johndoevcardpage </a></li>';
+    s += '      <li><img src="css/images/linkedin_32.png" /><a href><strong>Linkedin</strong><br>www.linkedin.com/in/johndoevcard </a></li>';
     s += '    </ul>';
     s += '    <ul>';
-    s += '      <li class="work-one"><img src="css/images/work-1.jpg"></li>';
-    s += '      <li class="work-two"><img src="css/images/work-2.jpg"></li>';
-    s += '      <li class="work-three"><img src="css/images/work-3.jpg"></li>';
-    s += '      <li class="work-one"><img src="css/images/work-1.jpg"></li>';
-    s += '      <li class="work-two"><img src="css/images/work-2.jpg"></li>';
+    s += '      <li><img src="css/images/facebook_32.png" /><a href><strong>Facebook</strong><br>www.facebook.com/johndoevcardpage </a></li>';
+    s += '      <li><img src="css/images/deviantart_32.png" /><a href><strong>Deviantart</strong><br>www.deviantart.com/johndoevcard </a></li>';
+    s += '      <li><img src="css/images/youtube_32.png" /><a href><strong>Youtube</strong><br>www.youtube.com/johndoevcardpage </a></li>';
+    s += '      <li><img src="css/images/tumblr_32.png" /><a href><strong>Tumblr</strong><br>www.tumblr.com/johndoevcardpage </a></li>';
     s += '    </ul>';
-    s += '  </div>';
     s += '</div>';
 
 
@@ -141,7 +137,47 @@ $('#social').on('click', function(clickEvent) {
 
     // alert('yo');
     function sliderDown(e) {
-      $("#workContaier").delay(650).slideDown(300);
+      $("#socialContainer").delay(650).slideDown(300);
+      console.log($(s));
+
+      // alert('working')
+    }
+    sliderDown();
+  }
+  slider();
+
+  })
+
+$('#contact').on('click', function(clickEvent) {
+    // $("ul.nav a").slide('slow').hasClass('active');
+    var s = ''
+    s += '<div id="contactContainer" style="display: none;">';
+    s += '    <ul>';
+    s += '      <li><strong>John Doe</strong></li>';
+    s += '      <li>56 Creative Q Box Street</li>';
+    s += '      <li>E-800 Edinburgh</li>';
+    s += '      <li>Phone: +510 123-4567</li>';
+    s += '      <li>Cell: +510 123-4567</li>';
+    s += '      <li>E-Mail: hello@creativeqbox.com</li>';
+    s += '    </ul>';
+    s += '    <ul>';
+    s += '      <li><strong>Contact Form</strong></li>';
+    s += '      <li><span>Name:</span> <input type="text" name="name" id="name"></li>';
+    s += '      <li><span>E-Mail:</span> <input type="text" name="email" id="email"></li>';
+    s += '      <li><span>Message:</span> <textarea name="message" id="message" cols="40" rows="10"></textarea></li>';
+    s += '    </ul>';
+    s += '</div>';
+
+
+
+    var slider = function(e) {
+    
+    $(".content").children().slideUp();
+    $(".content").append(s);
+
+    // alert('yo');
+    function sliderDown(e) {
+      $("#contactContainer").delay(650).slideDown(300);
       console.log($(s));
 
       // alert('working')

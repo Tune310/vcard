@@ -31,6 +31,7 @@ ul {
     margin-right: auto;
     width: 600px;
     height: 400px;
+    max-height: 300px;
     color: black !important;
 }
 
@@ -47,8 +48,10 @@ ul.nav {
 }
 
 ul.nav a {
+    font-family: Verdana;
+    font-size: 14px;
 	text-decoration: none;
-	color: black;
+	color: #3F3F3F;
 }
 
 a:active {
@@ -76,7 +79,7 @@ a.vcard {
 }
 
 h2 {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 a {
@@ -105,13 +108,29 @@ div.copy {
 }
 
 .content {
-    padding: 15px 15px 0px 15px;
+    padding: 0px 15px 0px 15px;
     height: 100%;
 }
 
 
-div.WorkLeft {
+#homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
 
+#workContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: relative; */
+    height: 250px;
+}
+
+#workContainer li {
+    margin-bottom: 10px;
 }
 
 .work-one {
@@ -151,4 +170,79 @@ div.WorkLeft {
     padding: 0px;
     margin: 0 auto !important;
     justify-content: space-around;
+}
+
+#socialContainer {
+    display: flex;
+    overflow: hidden;
+}
+
+#socialContainer ul {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 15px;
+}
+
+#socialContainer ul li {
+    display: flex;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#socialContainer a {
+    font-family: Verdana;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+#socialContainer ul li img {
+    margin-right: 5px;
+}
+
+#contactContainer {
+    display: flex;
+    overflow: hidden;
+}
+
+#contactContainer span {
+    display: flex;
+    vertical-align: top;
+    width: 85px;
+    font-size: 12px;
+    font-family: Verdana;
+}
+
+#contactContainer ul {
+    padding-left: 10px;
+    width: 280px;
+}
+
+#contactContainer li {
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+#contactContainer #message {
+    width: 200px;
+    height: 50px;
+}
+
+#contactContainer #name {
+    width: 200px;
+    height: 13px !important;
+}
+
+#contactContainer #email {
+    width: 200px;
+    height: 13px !important;
+}
+
+#contactContainer strong {
+    font-size: 12px;
+    font-family: Verdana;
 }
