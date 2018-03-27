@@ -319,6 +319,42 @@ $('#ui').on('click', function(clickEvent) {
 
   })
 
+  // UI3
+  $('#ui3').on('click', function(clickEvent) {
+    // $("ul.nav a").slide('slow').hasClass('active');
+    var s = ''
+    s += '<div id="uiThreeContainer" style="display: none;">';
+    s += '  <h2>Cufon h2 Lorem Ipsum is simply</h2>';
+    s += '  <h3>Cufon h3 Lorem Ipsum is simply</h3>';
+    s += '  <span>Cufon text Lorem Ipsum is simply</span>';
+    s +=  ' <div class="linkTextContainer">'
+    s += '    <a href="">Link Text</a> '
+    s += '    - '
+    s += '    <a class="blue" href="">Color Link Text</a> '
+    s +=  ' </div>'
+    s += '  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>';
+    s += '</div>';
+
+
+
+    var slider = function(e) {
+    
+    $(".content").children().slideUp();
+    $(".content").append(s);
+
+    // alert('yo');
+    function sliderDown(e) {
+      $("#uiThreeContainer").delay(650).slideDown(300);
+      console.log($(s));
+
+      // alert('working')
+    }
+    sliderDown();
+  }
+  slider();
+
+  })
+
 
 
   // LOOP

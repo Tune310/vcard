@@ -8,13 +8,30 @@ body {
 
 h1 {
 	color: white;
-    font-family: Verdana;
+    font-family: Verdana !important;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 32px !important;
     position: relative;
     top: 8px;
 }
 
+h2 {
+    font-family: Verdana !important;
+    font-weight: normal;
+    font-size: 23px !important;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #3f3f3f;
+}
+
+h3 {
+    font-family: Verdana !important;
+    font-weight: normal;
+    font-size: 18px !important;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #3f3f3f;
+}
 p {
     font-size: 12px;
     font-family: Verdana;
@@ -91,10 +108,6 @@ a.vcard {
     background: url('images/blue_bck_vcard.jpg') no-repeat;
     margin-top: 15px;
     margin-bottom: 30px;
-}
-
-h2 {
-	margin-bottom: 15px;
 }
 
 a {
@@ -344,6 +357,30 @@ input {
 
 }
 
+#uiThreeContainer {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    text-align: left;
+}
+
+#uiThreeContainer span {
+    font-family: Verdana !important;
+    font-weight: normal;
+    font-size: 12px !important;
+    line-height: 16px;
+    margin-bottom: 15px;
+    color: #3f3f3f;
+}
+
+#uiThreeContainer a {
+    color: #3F3F3F;
+    font-size: 12px;
+    font-family: Verdana;
+    line-height: 16px;
+}
+    
+/*     $*\$$   Scrollbar   $*\$$      */
 ::-webkit-scrollbar {
     width: 14px;
     background: #E5E5E5 url('images/bck_scroll.jpg') repeat-y;
@@ -368,4 +405,12 @@ input {
     height: 50px;
     background: url('images/bck_shadow.png') no-repeat;
     margin: 0 auto;
+}
+
+.blue {
+    color: #2277BB !important;
+}
+
+.linkTextContainer {
+    margin-top: 10px;
 }
