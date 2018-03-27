@@ -90,15 +90,15 @@ $('#work').on('click', function(clickEvent) {
     s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
     s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
     s += '      <li class="work-three"><a class="fancybox" rel="group" href="css/images/work-3_big.jpg"><img src="css/images/work-3.jpg"></a></li>';
-    s += '      <li class="work-one"><img src="css/images/work-1.jpg"></li>';
-    s += '      <li class="work-two"><img src="css/images/work-2.jpg"></li>';
+    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
     s += '    </ul>';
     s += '    <ul>';
-    s += '      <li class="work-one"><img src="css/images/work-1.jpg"></li>';
-    s += '      <li class="work-two"><img src="css/images/work-2.jpg"></li>';
-    s += '      <li class="work-three"><img src="css/images/work-3.jpg"></li>';
-    s += '      <li class="work-one"><img src="css/images/work-1.jpg"></li>';
-    s += '      <li class="work-two"><img src="css/images/work-2.jpg"></li>';
+    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
+    s += '      <li class="work-three"><a class="fancybox" rel="group" href="css/images/work-3_big.jpg"><img src="css/images/work-3.jpg"></a></li>';
+    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
     s += '    </ul>';
     s += '  </div>';
     s += '</div>';
@@ -107,8 +107,9 @@ $('#work').on('click', function(clickEvent) {
 
     var slider = function(e) {
     
-    $(".content").children().slideUp();
+    $(".content").children().slideUp();;
     $(".content").append(s);
+
 
     // alert('yo');
     function sliderDown(e) {
