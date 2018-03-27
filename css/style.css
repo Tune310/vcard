@@ -324,7 +324,6 @@ input {
     top: 0;
     left: 0;
     cursor: pointer;
-    /*padding-top: 15px;*/
 }
 
     /* Track */
@@ -335,5 +334,4 @@ input {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #E5E5E5 url('images/bck_scroll.jpg') repeat-y;
-    /*padding-top: 15px;*/
 }
