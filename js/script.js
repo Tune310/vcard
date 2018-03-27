@@ -1,30 +1,41 @@
 $(document).ready(function(){
 
-$(".fancybox").fancybox({
-    beforeShow : function() {
-        console.info( this ); //Current object
-        console.info( this.element ); //Group
-        console.info( this.group ); // Element (link)
-        console.info( this.index + 1); // Element index in the group
-        this.title = '<span> ' + 'Image ' + (this.index + 1) + ' / ' + ($(".fancybox").length) + ' ' + ' <p>Lorem</p>' + '</span>'; // Example of changing the title
-    },
-    helpers:  {
+ 
 
-            title : {
+  $(".fancybox").fancybox({
+      openEffect: 'elastic',
+      closeEffect: 'elastic',
+      prevEffect: 'fade',
+      nextEffect: 'fade',
+      fitToView: true, // images won't be scaled to fit to browser's height
+      maxWidth: '90%', // images won't exceed the browser's width
+      width    : 'auto',
+      height   : 'auto',
+      beforeShow : function() {
+          console.info( this ); //Current object
+          console.info( this.element ); //Group
+          console.info( this.group ); // Element (link)
+          console.info( this.index + 1); // Element index in the group
+          this.title = '<span> ' + 'Image ' + (this.index + 1) + ' / ' + ($(".fancybox").length) + ' ' + ' <p>Lorem</p>' + '</span>'; // Example of changing the title
+      },
+      helpers:  {
 
-                type : 'over'
+              title : {
 
-            }
+                  type : 'over',
 
-        }
+              }
 
-    });
-});   
+          }
 
-$(function()
-{
-  $('#uiContainer.scroll-pane').jScrollPane();
-});
+      });
+  });   
+  
+
+// $(function()
+// {
+//   $('#uiContainer.scroll-pane').jScrollPane();
+// });
   
   
   // Fancy Box image modal
