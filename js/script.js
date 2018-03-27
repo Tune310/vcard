@@ -21,6 +21,10 @@ $(".fancybox").fancybox({
     });
 });   
 
+$(function()
+{
+  $('#uiContainer.scroll-pane').jScrollPane();
+});
   
   
   // Fancy Box image modal
@@ -214,7 +218,37 @@ $('#contact').on('click', function(clickEvent) {
 
   })
 
-// Image capptio
+$('#ui').on('click', function(clickEvent) {
+    // $("ul.nav a").slide('slow').hasClass('active');
+    var s = ''
+    s += '<div id="uiContainer" class="scroll-pane" style="display: none;">';
+    s += '  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>';
+    s += '  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>';
+    s += '  <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>';
+    s += '  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>';
+    s += '  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>';
+    s += '  <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>';
+    s += '</div>';
+
+
+
+    var slider = function(e) {
+    
+    $(".content").children().slideUp();
+    $(".content").append(s);
+
+    // alert('yo');
+    function sliderDown(e) {
+      $("#uiContainer").delay(650).slideDown(300);
+      console.log($(s));
+
+      // alert('working')
+    }
+    sliderDown();
+  }
+  slider();
+
+  })
 
   // LOOP
   var navItems = $("ul.nav").find('a');
@@ -238,24 +272,9 @@ $('#contact').on('click', function(clickEvent) {
 
   })
 
+// jScrollPane
 
 
-
-// function findImage(event) {
-//   var item = $(".fancybox");
-//   item.on('click', function(e){
-//     console.log(this);
-//   })
-// }
-// function test(data) {
-//   var workImages = $("#workContainer div ul li a");
-//   for (var i = 0; i < workImages.length; i++) {
-//        // var index = workImages.index(this);
-//        console.log(workImages);
-//   }
-//   console.log("working");
-// }
-// test();
   
 
 
