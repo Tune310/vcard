@@ -1,4 +1,16 @@
 
+$(document).ready(function(){ 
+
+  Cufon.replace("h1");
+  Cufon.replace("h2");
+  Cufon.replace("h4");
+  Cufon.replace("h3");
+  Cufon.replace(".cufon");
+  Cufon.replace("a.vcard");
+}
+
+);
+
 $(document).ready(function(){
 
   $(".fancybox").fancybox({
