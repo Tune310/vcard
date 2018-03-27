@@ -272,3 +272,20 @@ input {
     display: flex;
     justify-content: flex-end;
 }
+
+.fancybox-title-over-wrap {
+    padding: 10px 0px !important;
+    background: url('images/fancy_title_over.png') !important;
+    width: 100%;
+}
+
+.fancybox-title-over-wrap span {
+    margin: 0px 10px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.fancybox-title-over-wrap p {
+    display: inline;
+    margin-left: 5px;
+}

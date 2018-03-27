@@ -6,12 +6,22 @@ $(".fancybox").fancybox({
         console.info( this.element ); //Group
         console.info( this.group ); // Element (link)
         console.info( this.index + 1); // Element index in the group
-        this.title = 'beforeShow changed title ' + (this.index + 1) + '/' + ($(".fancybox").length); // Example of changing the title
-    }
-});
+        this.title = '<span> ' + 'Image ' + (this.index + 1) + ' / ' + ($(".fancybox").length) + ' ' + ' <p>Lorem</p>' + '</span>'; // Example of changing the title
+    },
+    helpers:  {
 
- 
-  });  
+            title : {
+
+                type : 'over'
+
+            }
+
+        }
+
+    });
+});   
+
+  
   
   // Fancy Box image modal
 $("#workContainer").on('click', '.fancybox', function(clickEvent) {
@@ -105,7 +115,6 @@ $('#work').on('click', function(clickEvent) {
     s += '</div>';
 
     var slider = function(e) {
-    // $("#workContainer").addClass("yo");
     $(".content").children().slideUp();;
     $("#workContainer").remove();
     
