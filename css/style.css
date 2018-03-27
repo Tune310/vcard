@@ -55,11 +55,11 @@ ul.nav a {
 }
 
 a:active {
-	color: blue !important;
+	color: #2277BB !important;
 }
 
 a.active {
-	color: blue !important;
+	color: #2277BB !important;
 }
 
 ul.nav li {
@@ -313,6 +313,7 @@ input {
     font-size: 12px;
     font-family: verdana;
     text-align: left;
+    margin-bottom: 18px;
 
 }
 
