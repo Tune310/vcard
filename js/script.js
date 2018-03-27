@@ -255,6 +255,60 @@ $('#ui').on('click', function(clickEvent) {
 
   })
 
+  // UI2
+
+  $('#ui2').on('click', function(clickEvent) {
+    // $("ul.nav a").slide('slow').hasClass('active');
+    var s = ''
+    s += '<div id="uiTwoContainer" style="display: none;">';
+    s += '  <div class="row">';
+    s += '    <ul>';
+    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
+    s += '      <li class="work-three"><a class="fancybox" rel="group" href="css/images/work-3_big.jpg"><img src="css/images/work-3.jpg"></a></li>';
+    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
+    s += '    </ul>';
+    s += '    <ul>';
+    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
+    s += '      <li class="work-three"><a class="fancybox" rel="group" href="css/images/work-3_big.jpg"><img src="css/images/work-3.jpg"></a></li>';
+    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
+    s += '    </ul>';
+    s += '    <ul>';
+    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
+    s += '      <li class="work-three"><a class="fancybox" rel="group" href="css/images/work-3_big.jpg"><img src="css/images/work-3.jpg"></a></li>';
+    s += '      <li class="work-one"><a class="fancybox" rel="group" href="css/images/work-1_big.jpg" title="Lorem"><img src="css/images/work-1.jpg" alt="" /></a></li>';
+    s += '      <li class="work-two"><a class="fancybox" rel="group" href="css/images/work-2_big.jpg"><img src="css/images/work-2.jpg"></a></li>';
+    s += '    </ul>';
+    s += '  </div>';
+    s += '</div>';
+
+    var slider = function(e) {
+    $(".content").children().slideUp();;
+    $("#uiTwoContainer").remove();
+    
+
+
+    // alert('yo');
+    function sliderDown(e) {
+      $(".content").append(s)
+      $("#uiTwoContainer").delay(650).slideDown(300);
+      console.log($(s));
+
+      // alert('working')
+    }
+    sliderDown();
+  }
+  slider();
+
+
+  })
+
+
+
   // LOOP
   var navItems = $("ul.nav").find('a');
 

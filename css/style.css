@@ -133,6 +133,20 @@ div.copy {
     margin-bottom: 10px;
 }
 
+#uiTwoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 210px;
+    overflow: auto;
+    position: relative;
+    top: 10px;
+}
+
+#uiTwoContainer li {
+    margin-bottom: 10px;
+}
+
 .work-one {
     width: 80px;
     height: 80px;
@@ -291,7 +305,8 @@ input {
 }
 
 #uiContainer {
-    /*text-align: left;*/
+    position: relative;
+    top: 15px;
 }
 
 #uiContainer p {
@@ -299,4 +314,25 @@ input {
     font-family: verdana;
     text-align: left;
 
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    background: #E5E5E5 url('images/bck_scroll.jpg') repeat-y;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    /*padding-top: 15px;*/
+}
+
+    /* Track */
+::-webkit-scrollbar-track {
+    background: #E5E6E8; 
+}
+     
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #E5E5E5 url('images/bck_scroll.jpg') repeat-y;
+    /*padding-top: 15px;*/
 }
