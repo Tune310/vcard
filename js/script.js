@@ -81,6 +81,7 @@ $("#workContainer").on('click', '.fancybox', function(clickEvent) {
 
   })
 
+
 $('#work').on('click', function(clickEvent) {
     // $("ul.nav a").slide('slow').hasClass('active');
     var s = ''
@@ -103,16 +104,16 @@ $('#work').on('click', function(clickEvent) {
     s += '  </div>';
     s += '</div>';
 
-
-
     var slider = function(e) {
-    
+    // $("#workContainer").addClass("yo");
     $(".content").children().slideUp();;
-    $(".content").append(s);
+    $("#workContainer").remove();
+    
 
 
     // alert('yo');
     function sliderDown(e) {
+      $(".content").append(s)
       $("#workContainer").delay(650).slideDown(300);
       console.log($(s));
 
@@ -121,6 +122,7 @@ $('#work').on('click', function(clickEvent) {
     sliderDown();
   }
   slider();
+
 
   })
 
