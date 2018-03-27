@@ -291,24 +291,12 @@ input {
 }
 
 #uiContainer {
-    text-align: left;
+    /*text-align: left;*/
 }
 
 #uiContainer p {
     font-size: 12px;
     font-family: verdana;
+    text-align: left;
 
-}
-
-/* Styles specific to this particular page */
-.scroll-pane
-{
-    width: 100%;
-    height: 200px;
-    overflow: auto;
-}
-.horizontal-only
-{
-    height: auto;
-    max-height: 200px;
 }
