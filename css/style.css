@@ -8,6 +8,18 @@ body {
 
 h1 {
 	color: white;
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 32px;
+    position: relative;
+    top: 8px;
+}
+
+p {
+    font-size: 12px;
+    font-family: Verdana;
+    color: #3f3f3f;
+
 }
 
 ul {
@@ -26,13 +38,16 @@ ul {
 }
 
 .container {
-	background: url('images/blue_bck_content.png') no-repeat fixed center center;
+	background: url('images/blue_bck_content.png');
 	margin-left: auto;
     margin-right: auto;
     width: 600px;
     height: 400px;
     max-height: 300px;
     color: black !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 ul.nav {
@@ -119,6 +134,18 @@ div.copy {
     justify-content: center;
     align-items: center;
     height: 250px;
+}
+
+#aboutContainer {
+    position: relative;
+    text-align: left;
+    top: 15px;
+}
+
+#aboutContainer p {
+    font-size: 12px;
+    font-family: Verdana;
+    line-height: 16px;
 }
 
 #workContainer {
@@ -334,4 +361,11 @@ input {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #E5E5E5 url('images/bck_scroll.jpg') repeat-y;
+}
+
+.wrapper .footer {
+    width: 600px;
+    height: 50px;
+    background: url('images/bck_shadow.png') no-repeat;
+    margin: 0 auto;
 }

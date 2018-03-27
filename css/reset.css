@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+
+
+h1 {}
+h2 {font: normal 26px/26px Verdana;}
+h3 { font: normal 22px/26px Verdana; }
+h4 { font: normal 20px Verdana; }
+h5 { font: bold 16px Verdana; margin:0px 0px 10px 0px; }
+h6 { font: normal 11px Verdana; }
+
+blockquote{
+	border-left:2px solid #ccc;
+	padding:0 0 0 10px;
+	margin:10px 20px 10px 20px;
+}
+
+blockquote p{
+	padding:0;
+	color:#a6a197;
+	font-style:italic;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+.cntr {
+	text-align:center;
+}
+
+.orange 	{ color:#EE7722; }
+.ocean 	{ color:#00B7E3; }
+.gray 	{ color:#333333; }
+.green 	{ color:#99CC00; }
+
+table {  
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-collapse: collapse;
+  width:100%;
+}
+
+table caption {
+  margin: 0 12px;
+  padding: 10px 0 5px 0;
+  text-align: left;  
+}
+
+table th,table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 6px 10px;
+  border-bottom: 1px solid #CECECE;
+  border-left: 1px solid #CECECE;
+  border-right: 1px solid #CECECE;
+}
+
+thead th {
+  font-weight:bold; text-shadow: #fff 0px 1px 0px;
+  border-top: 1px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
+}
+
+tbody tr.highlighted {
+  background-color: #EFEFEF;
+}
+
+tbody td {
+  border-bottom: 1px solid #d3ccbd;
+}
+
+tbody tr:hover td {
+  background: #F7F7F7; 
+  border-bottom: 1px solid #d3ccbd;
+}
+
+.button {
+  font: bold 11px/11px Verdana;
+}
