@@ -1,14 +1,6 @@
 $(document).ready(function(){
 
-$(".fancybox").fancybox({
-    beforeShow : function() {
-        console.info( this ); //Current object
-        console.info( this.element ); //Group
-        console.info( this.group ); // Element (link)
-        console.info( this.index + 1); // Element index in the group
-        this.title = 'beforeShow changed title ' + (this.index + 1) + '/' + ($(".fancybox").length); // Example of changing the title
-    }
-});
+  $(".fancybox").fancybox();
 
  
   });  
@@ -228,23 +220,17 @@ $('#contact').on('click', function(clickEvent) {
 
 
 
+  var workImages = $("#workContainer div ul li a img");
 
-// function findImage(event) {
-//   var item = $(".fancybox");
-//   item.on('click', function(e){
-//     console.log(this);
-//   })
-// }
-// function test(data) {
-//   var workImages = $("#workContainer div ul li a");
-//   for (var i = 0; i < workImages.length; i++) {
-//        // var index = workImages.index(this);
-//        console.log(workImages);
-//   }
-//   console.log("working");
-// }
-// test();
+  $("#workContainer div ul li").on('click', '.fancy', function(e) {
+    alert('yo');
+  });  
   
+  console.log(workImages);
+
+  for (var i = 0; i < workImages.length; i++) {
+       var index = workImages.index(this);
+  }
 
 
 // Slider Function///////////////////////////////////////////////
